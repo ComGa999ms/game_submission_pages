@@ -1,0 +1,5 @@
+Prompt used with Grok (xAI) on October 20, 2025:
+
+"Generate complete HTML, CSS, and vanilla JavaScript code for a browser-based game called FakeFeed. Theme: Detect fake news headlines from Vietnam/Australia social issues. Structure: Menu screen with Start button and instructions; Play screen with progress bar, news card displaying randomized headlines (pre-hardcode 10 real from recent 2025 reports, 10 plausible fakes), 'Real News' and 'Fake News' buttons, live score tracking, and feedback with explanations. Win if 6/10 correct, show results screen with replay. Make responsive for mobile, use neutral blue theme for trust. Include shuffle for no duplicates. Output as separate files: index.html (structure), style.css (animations and layout), script.js (logic with Fisher-Yates shuffle and async fallback). No external libraries."
+
+Response Summary: Produced modular code with vanilla JS for portability; integrated progress bar and button disable for UX; hardcoded balanced dataset for offline play.

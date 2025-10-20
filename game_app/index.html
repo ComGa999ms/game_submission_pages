@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeFeed: Detect Misinformation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="menu" class="screen">
+            <div class="menu-icon">📰</div>
+            <h1>FakeFeed</h1>
+            <p class="menu-subtitle">Challenge your ability to spot misinformation! Identify fake news headlines from Vietnam and Australia. Get 6/10 correct to win!</p>
+            <button class="btn btn-primary" onclick="startGame()">Start Game</button>
+            <div class="menu-footer">
+                <small>Powered by AI for Media Literacy</small>
+            </div>
+        </div>
+
+        <div id="play" class="screen" style="display: none;">
+            <div id="loading" style="display: none;">Generating fresh headlines with AI... Please wait.</div>
+            <div class="progress-container" style="display: none;">
+                <span id="progress">Question 1/10</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill" style="width: 10%"></div>
+                </div>
+                <span id="score">Score: 0/0</span>
+            </div>
+            
+            <div id="news-card">
+                <p id="headline"></p>
+            </div>
+            
+            <div class="buttons">
+                <button class="btn btn-success" onclick="guess(true)">Real News</button>
+                <button class="btn btn-danger" onclick="guess(false)">Fake News</button>
+            </div>
+            
+            <div id="feedback"></div>
+        </div>
+
+        <div id="result" class="screen" style="display: none;">
+            <div class="result-icon" id="result-icon"></div>
+            <h2 id="result-text"></h2>
+            <p>Final Score: <span id="final-score"></span>/10</p>
+            <button class="btn" onclick="restart()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

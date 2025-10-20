@@ -1,0 +1,3 @@
+"Brainstorm a simple web-based card game idea to address the social issue of misinformation and fake news in Vietnam and Australia. Format: Quiz-style with 10 randomized headlines (5 real, 5 fake). Mechanics: Players guess 'Real' or 'Fake', earn points for correct answers, win if 6/10 accurate. Include educational feedback with source verification. Tie to community resilience and media literacy. Suggest name: FakeFeed. Keep it front-end only with vanilla JS."
+
+Response Summary: Adopted binary choice mechanics with timed feedback and 6/10 win threshold for engagement; emphasized offline simulation of AI-generated fakes for replayability.
